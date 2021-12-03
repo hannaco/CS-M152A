@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Lab4/memory_game/NERP_demo_top_isim_beh.exe" -prj "D:/Lab4/memory_game/NERP_demo_top_beh.prj" "work.NERP_demo_top" "work.glbl" 

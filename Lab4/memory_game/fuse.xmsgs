@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="251" delta="unknown" >"D:/Lab4/memory_game/mancala.v" Line 108: Cannot access memory <arg fmt="%s" index="1">marbles</arg> directly
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"D:/Lab4/memory_game/mancala.v" Line 21: Module &lt;<arg fmt="%s" index="1">mancala</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+

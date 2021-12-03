@@ -1,0 +1,18 @@
+Running: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/Lab0/four_bit_counter_2/counter_test_version_2_isim_beh.exe -prj E:/Lab0/four_bit_counter_2/counter_test_version_2_beh.prj work.counter_test_version_2 work.glbl 
+ISim P.68d (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/Lab0/four_bit_counter_2/counter_version_2.v" into library work
+Analyzing Verilog file "E:/Lab0/four_bit_counter_2/counter_test_version_2.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module counter_version_2
+Compiling module counter_test_version_2
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 3 Verilog Units
+Built simulation executable E:/Lab0/four_bit_counter_2/counter_test_version_2_isim_beh.exe
+Fuse Memory Usage: 28360 KB
+Fuse CPU Usage: 483 ms

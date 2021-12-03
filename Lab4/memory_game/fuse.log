@@ -1,0 +1,10 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Lab4/memory_game/NERP_demo_top_isim_beh.exe -prj D:/Lab4/memory_game/NERP_demo_top_beh.prj work.NERP_demo_top work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 6
+Turning on mult-threading, number of parallel sub-compilation jobs: 12 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Lab4/memory_game/diffClocks.v" into library work
+Analyzing Verilog file "D:/Lab4/memory_game/mancala.v" into library work
+ERROR:HDLCompiler:1439 - "D:/Lab4/memory_game/mancala.v" Line 89: Multiple packed dimensions are not allowed in this mode of verilog
+ERROR:HDLCompiler:598 - "D:/Lab4/memory_game/mancala.v" Line 21: Module <mancala> ignored due to previous errors.
+Verilog file D:/Lab4/memory_game/mancala.v ignored due to errors

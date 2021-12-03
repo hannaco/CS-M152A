@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/Lab3/stopwatch/state4_tb_isim_beh.exe" -prj "E:/Lab3/stopwatch/state4_tb_beh.prj" "work.state4_tb" "work.glbl" 

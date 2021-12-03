@@ -1,0 +1,8 @@
+Release 14.6 Drc P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Oct 04 15:20:14 2021
+
+drc -z clock_divider_version_1.ncd clock_divider_version_1.pcf
+
+DRC detected 0 errors and 0 warnings.

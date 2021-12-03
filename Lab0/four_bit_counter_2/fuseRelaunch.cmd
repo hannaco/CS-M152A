@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/Lab0/four_bit_counter_2/counter_test_version_2_isim_beh.exe" -prj "E:/Lab0/four_bit_counter_2/counter_test_version_2_beh.prj" "work.counter_test_version_2" "work.glbl" 

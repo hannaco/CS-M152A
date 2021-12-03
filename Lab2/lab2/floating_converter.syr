@@ -1,0 +1,336 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: floating_converter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "floating_converter.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "floating_converter"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : floating_converter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Lab2\lab2\floating_converter.v" into library work
+Parsing module <floating_converter>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <floating_converter>.
+WARNING:HDLCompiler:413 - "E:\Lab2\lab2\floating_converter.v" Line 41: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "E:\Lab2\lab2\floating_converter.v" Line 69: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "E:\Lab2\lab2\floating_converter.v" Line 75: Result of 4-bit expression is truncated to fit in 3-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <floating_converter>.
+    Related source file is "E:\Lab2\lab2\floating_converter.v".
+    Found 12-bit adder for signal <D[11]_GND_1_o_add_2_OUT> created at line 41.
+    Found 4-bit adder for signal <D[11]_GND_1_o_add_23_OUT> created at line 82.
+    Found 3-bit subtractor for signal <_n0058> created at line 73.
+    Found 3-bit subtractor for signal <GND_1_o_GND_1_o_add_20_OUT> created at line 75.
+    Found 12-bit shifter logical left for signal <abs> created at line 67
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <floating_converter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 12-bit adder                                          : 1
+ 3-bit subtractor                                      : 2
+ 4-bit adder                                           : 1
+# Multiplexers                                         : 7
+ 12-bit 2-to-1 multiplexer                             : 3
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 1
+ 12-bit shifter logical left                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 12-bit adder                                          : 1
+ 3-bit subtractor                                      : 2
+ 4-bit adder                                           : 1
+# Multiplexers                                         : 7
+ 12-bit 2-to-1 multiplexer                             : 3
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 1
+ 12-bit shifter logical left                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <floating_converter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block floating_converter, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : floating_converter.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 82
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 1
+#      LUT2                        : 1
+#      LUT3                        : 2
+#      LUT4                        : 14
+#      LUT5                        : 7
+#      LUT6                        : 21
+#      MUXCY                       : 11
+#      VCC                         : 1
+#      XORCY                       : 12
+# IO Buffers                       : 20
+#      IBUF                        : 12
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   57  out of   9112     0%  
+    Number used as Logic:                57  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     57
+   Number with an unused Flip Flop:      57  out of     57   100%  
+   Number with an unused LUT:             0  out of     57     0%  
+   Number of fully used LUT-FF pairs:     0  out of     57     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    232     8%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 15.600ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 115965 / 8
+-------------------------------------------------------------------------
+Delay:               15.600ns (Levels of Logic = 13)
+  Source:            D<11> (PAD)
+  Destination:       F<2> (PAD)
+
+  Data Path: D<11> to F<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.222   1.027  D_11_IBUF (S_OBUF)
+     INV:I->O              0   0.206   0.000  n0050<11>1_INV_0 (n0050<11>)
+     XORCY:LI->O          15   0.136   1.210  Madd_D[11]_GND_1_o_add_2_OUT_xor<11> (D[11]_GND_1_o_add_2_OUT<11>)
+     LUT4:I1->O            5   0.205   1.079  Mmux_D[11]_D[11]_mux_5_OUT101 (D[11]_D[11]_mux_5_OUT<8>)
+     LUT6:I0->O            3   0.203   0.651  D[11]_GND_1_o_equal_13_o<11>111 (D[11]_GND_1_o_equal_13_o<11>11)
+     LUT5:I4->O            4   0.205   0.684  D[11]_GND_1_o_equal_13_o<11>1 (D[11]_GND_1_o_equal_13_o)
+     LUT6:I5->O           15   0.205   1.346  D[11]_GND_1_o_select_14_OUT<32>1 (D[11]_GND_1_o_select_14_OUT<0>1)
+     LUT6:I0->O            2   0.203   0.721  Sh71 (Sh7)
+     LUT3:I1->O            2   0.203   0.617  Sh1911 (Sh191)
+     LUT6:I5->O            3   0.205   0.755  Madd_D[11]_GND_1_o_add_23_OUT_lut<0>1 (Madd_D[11]_GND_1_o_add_23_OUT_lut<0>)
+     LUT3:I1->O            2   0.203   0.961  Madd_D[11]_GND_1_o_add_23_OUT_cy<1>11 (Madd_D[11]_GND_1_o_add_23_OUT_cy<1>)
+     LUT6:I1->O            1   0.203   0.579  Mmux_F31 (F_2_OBUF)
+     OBUF:I->O                 2.571          F_2_OBUF (F<2>)
+    ----------------------------------------
+    Total                     15.600ns (5.970ns logic, 9.630ns route)
+                                       (38.3% logic, 61.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.52 secs
+ 
+--> 
+
+Total memory usage is 214304 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
